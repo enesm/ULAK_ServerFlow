@@ -1,0 +1,229 @@
+[
+  {
+    "id": "server1",
+    "label": "Sunucu 1\n192.168.1.1",
+    "type": "database",
+    "hardware": "Intel Xeon, 32GB RAM, 500GB SSD",
+    "os": "windows",
+    "connections": [
+      "server2",
+      "server3"
+    ]
+  },
+  {
+    "id": "server2",
+    "label": "Sunucu 2\n192.168.1.2",
+    "type": "web",
+    "hardware": "AMD EPYC, 64GB RAM, 1TB NVMe",
+    "os": "linux",
+    "connections": [
+      "server3",
+      "server4"
+    ]
+  },
+  {
+    "id": "server3",
+    "label": "Sunucu 3\n192.168.1.3",
+    "type": "application",
+    "hardware": "Intel i7, 16GB RAM, 256GB SSD",
+    "os": "mac",
+    "connections": [
+      "server5"
+    ]
+  },
+  {
+    "id": "server4",
+    "label": "Sunucu 4\n192.168.1.4",
+    "type": "database",
+    "hardware": "Intel Xeon, 128GB RAM, 2TB HDD",
+    "os": "windows",
+    "connections": [
+      "server5",
+      "server6"
+    ]
+  },
+  {
+    "id": "server5",
+    "label": "Sunucu 5\n192.168.1.5",
+    "type": "web",
+    "hardware": "AMD Ryzen, 16GB RAM, 1TB SSD",
+    "os": "linux",
+    "connections": [
+      "server7"
+    ]
+  },
+  {
+    "id": "server6",
+    "label": "Sunucu 6\n192.168.1.6",
+    "type": "application",
+    "hardware": "Intel i5, 8GB RAM, 512GB SSD",
+    "os": "mac",
+    "connections": [
+      "server7"
+    ]
+  },
+  {
+    "id": "server7",
+    "label": "Sunucu 7\n192.168.1.7",
+    "type": "database",
+    "hardware": "Intel Xeon, 64GB RAM, 4TB HDD",
+    "os": "linux",
+    "connections": [
+      "server8"
+    ]
+  },
+  {
+    "id": "server8",
+    "label": "Sunucu 8\n192.168.1.8",
+    "type": "web",
+    "hardware": "AMD EPYC, 32GB RAM, 2TB NVMe",
+    "os": "windows",
+    "connections": []
+  },
+  {
+    "id": "server9",
+    "label": "Sunucu 9\n192.168.1.9",
+    "type": "application",
+    "hardware": "Intel i9, 64GB RAM, 1TB SSD",
+    "os": "mac",
+    "connections": [
+      "server10"
+    ]
+  },
+  {
+    "id": "server10",
+    "label": "Sunucu 10\n192.168.1.10",
+    "type": "database",
+    "hardware": "Intel Xeon, 128GB RAM, 8TB HDD",
+    "os": "windows",
+    "connections": []
+  },
+  {
+    "id": "server11",
+    "label": "Sunucu 11\n192.168.1.11",
+    "type": "web",
+    "hardware": "AMD Ryzen, 32GB RAM, 2TB SSD",
+    "os": "linux",
+    "connections": [
+      "server12"
+    ]
+  },
+  {
+    "id": "server12",
+    "label": "Sunucu 12\n192.168.1.12",
+    "type": "application",
+    "hardware": "Intel i7, 16GB RAM, 256GB SSD",
+    "os": "mac",
+    "connections": [
+      "server13"
+    ]
+  },
+  {
+    "id": "server13",
+    "label": "Sunucu 13\n192.168.1.13",
+    "type": "database",
+    "hardware": "Intel Xeon, 256GB RAM, 12TB HDD",
+    "os": "windows",
+    "connections": [
+      "server14"
+    ]
+  },
+  {
+    "id": "server14",
+    "label": "Sunucu 14\n192.168.1.14",
+    "type": "web",
+    "hardware": "AMD EPYC, 64GB RAM, 4TB NVMe",
+    "os": "linux",
+    "connections": [
+      "server15"
+    ]
+  },
+  {
+    "id": "server15",
+    "label": "Sunucu 15\n192.168.1.15",
+    "type": "application",
+    "hardware": "Intel i9, 128GB RAM, 2TB SSD",
+    "os": "mac",
+    "connections": [
+      "server16"
+    ]
+  },
+  {
+    "id": "server16",
+    "label": "Sunucu 16\n192.168.1.16",
+    "type": "database",
+    "hardware": "Intel Xeon, 64GB RAM, 6TB HDD",
+    "os": "windows",
+    "connections": [
+      "server17"
+    ]
+  },
+  {
+    "id": "server17",
+    "label": "Sunucu 17\n192.168.1.17",
+    "type": "web",
+    "hardware": "AMD Ryzen, 16GB RAM, 1TB SSD",
+    "os": "linux",
+    "connections": [
+      "server18"
+    ]
+  },
+  {
+    "id": "server18",
+    "label": "Sunucu 18\n192.168.1.18",
+    "type": "application",
+    "hardware": "Intel i5, 32GB RAM, 512GB SSD",
+    "os": "mac",
+    "connections": [
+      "server19"
+    ]
+  },
+  {
+    "id": "server19",
+    "label": "Sunucu 19\n192.168.1.19",
+    "type": "database",
+    "hardware": "Intel Xeon, 128GB RAM, 10TB HDD",
+    "os": "windows",
+    "connections": [
+      "server18"
+    ]
+  },
+  {
+    "id": "server20",
+    "label": "Sunucu 20\n192.168.1.20",
+    "type": "web",
+    "hardware": "AMD EPYC, 64GB RAM, 4TB NVMe",
+    "os": "linux",
+    "connections": []
+  },
+  {
+    "id": "server21",
+    "label": "Sunucu 21\n192.168.1.21",
+    "type": "backup",
+    "hardware": "Intel i3, 4GB RAM, 512kB ROM",
+    "os": "ubuntu",
+    "connections": [
+      "server1",
+      "server2",
+      "server3",
+      "server4",
+      "server5",
+      "server6",
+      "server7",
+      "server8",
+      "server9",
+      "server10",
+      "server11",
+      "server12",
+      "server13",
+      "server14",
+      "server15",
+      "server16",
+      "server17",
+      "server18",
+      "server19",
+      "server20",
+      "server21"
+    ]
+  }
+]

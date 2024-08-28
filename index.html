@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemler Topolojisi - Big Data</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="vis.min.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+<div class="title">Veri Yönetimi Server Flow</div>
+<div id="network"></div>
+<div id="popup" class="popup">
+    <button class="close-btn">x</button>
+    <div id="popup-content"></div>
+</div>
+<div class="zoom-controls">
+    <button id="zoomIn">+</button>
+    <button id="zoomOut">-</button>
+</div>
+<div class="physics-control">
+    <label>
+        <input type="checkbox" id="physicsToggle" checked>
+        Fizik Simülasyonunu Etkinleştir
+    </label>
+</div>
+<div class="legend-button" id="legendButton">
+    ?
+    <div class="legend-content" id="legendContent">
+        <ul>
+            <li><img src="icons/database.svg" alt="Database Icon" class="legend-icon"> Database Server</li>
+            <li><img src="icons/web-server.svg" alt="Web Server Icon" class="legend-icon"> Web Server</li>
+            <li><img src="icons/app-server.svg" alt="App Server Icon" class="legend-icon"> Application Server</li>
+            <li><img src="icons/backup-server.svg" alt="Backup Server Icon" class="legend-icon"> Backup Server</li>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    © 2024 Veri Yönetimi Ekibi. Server Flow 1.0
+</div>
+</body>
+</html>
