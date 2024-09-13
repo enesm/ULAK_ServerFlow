@@ -5,7 +5,9 @@ fetch('servers.json')
             database: 'asset/database.svg',
             web: 'asset/web-server.svg',
             application: 'asset/app-server.svg',
-            backup: 'asset/backup-server.svg'
+            backup: 'asset/backup-server.svg',
+            ipsec: 'asset/ipsec.svg',
+            vpn: 'asset/vpn.svg'
         };
 
         const osIcons = {
