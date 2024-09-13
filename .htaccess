@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+
+AuthType Basic
+AuthName "Restricted Area"
+AuthUserFile C:\xampp7\htdocs\.htpasswd
+Require valid-user
