@@ -2,12 +2,14 @@ fetch('servers.json')
     .then(response => response.json())
     .then(serverData => {
         const typeIcons = {
+            server: 'asset/server.svg',
             database: 'asset/database.svg',
             web: 'asset/web-server.svg',
             application: 'asset/app-server.svg',
             backup: 'asset/backup-server.svg',
             ipsec: 'asset/ipsec.svg',
-            vpn: 'asset/vpn.svg'
+            vpn: 'asset/vpn.svg',
+            anydesk: 'asset/anydesk.svg'
         };
 
         const osIcons = {
@@ -44,7 +46,17 @@ fetch('servers.json')
 
         const defaultPhysicsOptions = {
             physics: {
-                enabled: true
+                enabled: true,
+                solver: 'repulsion',  // Repulsion solver seçildi.
+                repulsion: {
+                    nodeDistance: 150,   // Düğümler arası minimum mesafe (varsayılan 100).
+                    centralGravity: 0.01, // Ağ merkezine çekim gücü.
+                    springLength: 150,   // Düğümleri birbirine bağlayan yayların varsayılan uzunluğu.
+                    springConstant: 0.2 // Yayların esneklik sabiti.
+                },
+                maxVelocity: 50,      // Maksimum hız
+                minVelocity: 0.1,     // Düğümlerin minimum hız seviyesi
+                timestep: 0.5
             },
             interaction: {
                 zoomView: true
