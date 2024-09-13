@@ -2,17 +2,17 @@ fetch('servers.json')
     .then(response => response.json())
     .then(serverData => {
         const typeIcons = {
-            database: 'icons/database.svg',
-            web: 'icons/web-server.svg',
-            application: 'icons/app-server.svg',
-            backup: 'icons/backup-server.svg'
+            database: 'asset/database.svg',
+            web: 'asset/web-server.svg',
+            application: 'asset/app-server.svg',
+            backup: 'asset/backup-server.svg'
         };
 
         const osIcons = {
-            windows: 'icons/windows.svg',
-            linux: 'icons/linux.svg',
-            mac: 'icons/mac.svg',
-            ubuntu: 'icons/ubuntu.svg'
+            windows: 'asset/windows.svg',
+            linux: 'asset/linux.svg',
+            mac: 'asset/mac.svg',
+            ubuntu: 'asset/ubuntu.svg'
         };
 
         const nodes = new vis.DataSet(serverData.map(server => ({
