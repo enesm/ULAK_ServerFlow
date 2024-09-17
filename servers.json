@@ -16,6 +16,14 @@
     "connections": []
   },
   {
+    "id": "10.191",
+    "label": "Bigdata NOC Hub\n192.168.10.191:8000",
+    "type": "web",
+    "hardware": "http://nocportal.ulakhaberlesme.com.tr<br>Virtual Machine<br>Intel Xeon E5-2650 2.6GHz<br>8GB RAM<br>150GB Virtual ROM",
+    "os": "windows",
+    "connections": []
+  },
+  {
     "id": "10.103",
     "label": "Clickhouse Database Server\n192.168.10.103",
     "type": "database",
