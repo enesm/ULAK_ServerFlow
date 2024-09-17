@@ -1,229 +1,298 @@
 [
   {
-    "id": "server1",
-    "label": "Sunucu 1\n192.168.1.1",
-    "type": "database",
-    "hardware": "Intel Xeon, 32GB RAM, 500GB SSD",
-    "os": "windows",
-    "connections": [
-      "server2",
-      "server3"
-    ]
-  },
-  {
-    "id": "server2",
-    "label": "Sunucu 2\n192.168.1.2",
-    "type": "web",
-    "hardware": "AMD EPYC, 64GB RAM, 1TB NVMe",
+    "id": "10.16",
+    "label": "Central PM\n192.168.10.16",
+    "type": "server",
+    "hardware": "ProLiant DL380 Gen10 Plus<br>Intel Xeon Gold 6338 2.0GHz<br>128GB RAM<br>15TB ROM",
     "os": "linux",
-    "connections": [
-      "server3",
-      "server4"
-    ]
+    "connections": ["10.47", "tt_ipsec", "faz2_ipsec", "faz3_ipsec", "sudan_ipsec", "vdf_ipsec"]
   },
   {
-    "id": "server3",
-    "label": "Sunucu 3\n192.168.1.3",
-    "type": "application",
-    "hardware": "Intel i7, 16GB RAM, 256GB SSD",
-    "os": "mac",
-    "connections": [
-      "server5"
-    ]
-  },
-  {
-    "id": "server4",
-    "label": "Sunucu 4\n192.168.1.4",
-    "type": "database",
-    "hardware": "Intel Xeon, 128GB RAM, 2TB HDD",
-    "os": "windows",
-    "connections": [
-      "server5",
-      "server6"
-    ]
-  },
-  {
-    "id": "server5",
-    "label": "Sunucu 5\n192.168.1.5",
-    "type": "web",
-    "hardware": "AMD Ryzen, 16GB RAM, 1TB SSD",
-    "os": "linux",
-    "connections": [
-      "server7"
-    ]
-  },
-  {
-    "id": "server6",
-    "label": "Sunucu 6\n192.168.1.6",
-    "type": "application",
-    "hardware": "Intel i5, 8GB RAM, 512GB SSD",
-    "os": "mac",
-    "connections": [
-      "server7"
-    ]
-  },
-  {
-    "id": "server7",
-    "label": "Sunucu 7\n192.168.1.7",
-    "type": "database",
-    "hardware": "Intel Xeon, 64GB RAM, 4TB HDD",
-    "os": "linux",
-    "connections": [
-      "server8"
-    ]
-  },
-  {
-    "id": "server8",
-    "label": "Sunucu 8\n192.168.1.8",
-    "type": "web",
-    "hardware": "AMD EPYC, 32GB RAM, 2TB NVMe",
-    "os": "windows",
-    "connections": []
-  },
-  {
-    "id": "server9",
-    "label": "Sunucu 9\n192.168.1.9",
-    "type": "application",
-    "hardware": "Intel i9, 64GB RAM, 1TB SSD",
-    "os": "mac",
-    "connections": [
-      "server10"
-    ]
-  },
-  {
-    "id": "server10",
-    "label": "Sunucu 10\n192.168.1.10",
-    "type": "database",
-    "hardware": "Intel Xeon, 128GB RAM, 8TB HDD",
-    "os": "windows",
-    "connections": []
-  },
-  {
-    "id": "server11",
-    "label": "Sunucu 11\n192.168.1.11",
-    "type": "web",
-    "hardware": "AMD Ryzen, 32GB RAM, 2TB SSD",
-    "os": "linux",
-    "connections": [
-      "server12"
-    ]
-  },
-  {
-    "id": "server12",
-    "label": "Sunucu 12\n192.168.1.12",
-    "type": "application",
-    "hardware": "Intel i7, 16GB RAM, 256GB SSD",
-    "os": "mac",
-    "connections": [
-      "server13"
-    ]
-  },
-  {
-    "id": "server13",
-    "label": "Sunucu 13\n192.168.1.13",
-    "type": "database",
-    "hardware": "Intel Xeon, 256GB RAM, 12TB HDD",
-    "os": "windows",
-    "connections": [
-      "server14"
-    ]
-  },
-  {
-    "id": "server14",
-    "label": "Sunucu 14\n192.168.1.14",
-    "type": "web",
-    "hardware": "AMD EPYC, 64GB RAM, 4TB NVMe",
-    "os": "linux",
-    "connections": [
-      "server15"
-    ]
-  },
-  {
-    "id": "server15",
-    "label": "Sunucu 15\n192.168.1.15",
-    "type": "application",
-    "hardware": "Intel i9, 128GB RAM, 2TB SSD",
-    "os": "mac",
-    "connections": [
-      "server16"
-    ]
-  },
-  {
-    "id": "server16",
-    "label": "Sunucu 16\n192.168.1.16",
-    "type": "database",
-    "hardware": "Intel Xeon, 64GB RAM, 6TB HDD",
-    "os": "windows",
-    "connections": [
-      "server17"
-    ]
-  },
-  {
-    "id": "server17",
-    "label": "Sunucu 17\n192.168.1.17",
-    "type": "web",
-    "hardware": "AMD Ryzen, 16GB RAM, 1TB SSD",
-    "os": "linux",
-    "connections": [
-      "server18"
-    ]
-  },
-  {
-    "id": "server18",
-    "label": "Sunucu 18\n192.168.1.18",
-    "type": "application",
-    "hardware": "Intel i5, 32GB RAM, 512GB SSD",
-    "os": "mac",
-    "connections": [
-      "server19"
-    ]
-  },
-  {
-    "id": "server19",
-    "label": "Sunucu 19\n192.168.1.19",
-    "type": "database",
-    "hardware": "Intel Xeon, 128GB RAM, 10TB HDD",
-    "os": "windows",
-    "connections": [
-      "server18"
-    ]
-  },
-  {
-    "id": "server20",
-    "label": "Sunucu 20\n192.168.1.20",
-    "type": "web",
-    "hardware": "AMD EPYC, 64GB RAM, 4TB NVMe",
-    "os": "linux",
-    "connections": []
-  },
-  {
-    "id": "server21",
-    "label": "Sunucu 21\n192.168.1.21",
+    "id": "10.47",
+    "label": "Master Backup\n192.168.10.47",
     "type": "backup",
-    "hardware": "Intel i3, 4GB RAM, 512kB ROM",
-    "os": "ubuntu",
-    "connections": [
-      "server1",
-      "server2",
-      "server3",
-      "server4",
-      "server5",
-      "server6",
-      "server7",
-      "server8",
-      "server9",
-      "server10",
-      "server11",
-      "server12",
-      "server13",
-      "server14",
-      "server15",
-      "server16",
-      "server17",
-      "server18",
-      "server19",
-      "server20",
-      "server21"
-    ]
+    "hardware": "ProLiant DL380p Gen8<br>Intel Xeno E5-2640 2.5GHz<br>128GB RAM<br>10TB ROM",
+    "os": "linux",
+    "connections": []
+  },
+  {
+    "id": "10.103",
+    "label": "Clickhouse Database Server\n192.168.10.103",
+    "type": "database",
+    "hardware": "Virtual Machine<br>Intel Xeon E5-2620 2GHz<br>32GB RAM<br>268GB Virtual ROM",
+    "os": "linux",
+    "connections": ["10.16", "10.24_db"]
+  },
+  {
+    "id": "10.103_rest",
+    "label": "Clickhouse REST Server\n192.168.10.103:8123",
+    "type": "web",
+    "hardware": "",
+    "os": "linux",
+    "connections": ["10.103"]
+  },
+  {
+    "id": "10.45",
+    "label": "Alarm & KPI REST Server\n192.168.10.45",
+    "type": "server",
+    "hardware": "Virtual Machine<br>Intel Xeon E5-2620 2GHz<br>32GB RAM<br>214GB Virtual ROM",
+    "os": "linux",
+    "connections": ["10.103"]
+  },
+  {
+    "id": "10.45_rest",
+    "label": "Alarm & KPI REST Web Server\n192.168.10.45:5000",
+    "type": "web",
+    "hardware": "",
+    "os": "linux",
+    "connections": ["10.45"]
+  },
+  {
+    "id": "10.63",
+    "label": "Turboard Server\n192.168.10.63",
+    "type": "server",
+    "hardware": "Virtual Machine<br>Intel Xeon Silver 4210 2.2GHz<br>16GB RAM<br>128GB ROM",
+    "os": "linux",
+    "connections": ["10.103"]
+  },
+  {
+    "id": "10.63_web",
+    "label": "Turboard Web App\n192.168.10.63:8000",
+    "type": "web",
+    "hardware": "",
+    "os": "linux",
+    "connections": ["10.63"]
+  },
+  {
+    "id": "10.24_web",
+    "label": "NOC Arıza & İş Kayıt & CM Portalı\n192.168.10.24:8000",
+    "type": "web",
+    "hardware": "",
+    "os": "windows",
+    "connections": ["10.24_db", "10.47"]
+  },
+  {
+    "id": "10.24_db",
+    "label": "NOC Arıza & İş Kayıt & CM Database\n192.168.10.24/phpmyadmin",
+    "type": "database",
+    "hardware": "MYSQL",
+    "os": "windows",
+    "connections": ["10.24"]
+  },
+  {
+    "id": "10.24",
+    "label": "NOC Arıza & İş Kayıt Server\n192.168.10.24",
+    "type": "server",
+    "hardware": "Virtual Machine<br>Intel Xeon Silver 4210 2.2GHz<br>8GB RAM<br>100GB ROM",
+    "os": "windows",
+    "connections": ["10.47"]
+  },
+  {
+    "id": "zabbix",
+    "label": "Zabbix\n192.168.10.201",
+    "type": "application",
+    "hardware": "Hw info here",
+    "os": "windows",
+    "connections": []
+  },
+  {
+    "id": "actix",
+    "label": "Actix\n192.168.10.28",
+    "type": "web",
+    "hardware": "Hw info here",
+    "os": "windows",
+    "connections": []
+  },
+  {
+    "id": "atol",
+    "label": "Atol\n403 830 198",
+    "type": "anydesk",
+    "hardware": "Hw info here",
+    "os": "windows",
+    "connections": []
+  },
+  {
+    "id": "tr",
+    "label": "Turkcell OAM",
+    "type": "server",
+    "hardware": "Hw info here",
+    "os": "linux",
+    "connections": ["tr_vpn"]
+  },
+  {
+    "id": "tr_vpn",
+    "label": "Turkcell VPN",
+    "type": "vpn",
+    "hardware": "VPN Bağlantısı",
+    "os": "linux",
+    "connections": ["10.16", "10.47"]
+  },
+  {
+    "id": "tt",
+    "label": "Turk Telekom OAM",
+    "type": "server",
+    "hardware": "Hw info here",
+    "os": "linux",
+    "connections": []
+  },
+  {
+    "id": "tt_ipsec",
+    "label": "Turk Telekom IPSEC\n10.222.74.45",
+    "type": "ipsec",
+    "hardware": "IPSEC tünel bağlantısı",
+    "os": "linux",
+    "connections": ["tt"]
+  },
+  {
+    "id": "vdf",
+    "label": "Vodafone OAM",
+    "type": "server",
+    "hardware": "Hw info here",
+    "os": "linux",
+    "connections": []
+  },
+  {
+    "id": "vdf_ipsec",
+    "label": "Vodafone IPSEC\n10.122.246.6",
+    "type": "ipsec",
+    "hardware": "IPSEC tünel bağlantısı",
+    "os": "linux",
+    "connections": ["vdf"]
+  },
+  {
+    "id": "faz1",
+    "label": "Faz-1 OAM",
+    "type": "server",
+    "hardware": "hw info here",
+    "os": "linux",
+    "connections": ["faz1_vpn"]
+  },
+  {
+    "id": "faz1_vpn",
+    "label": "Faz-1 VPN",
+    "type": "vpn",
+    "hardware": "VPN bağlantısı",
+    "os": "linux",
+    "connections": ["10.16"]
+  },
+  {
+    "id": "faz2",
+    "label": "Faz-2 OAM",
+    "type": "server",
+    "hardware": "Hw info here",
+    "os": "linux",
+    "connections": []
+  },
+  {
+    "id": "faz2_ipsec",
+    "label": "Faz-2 IPSEC\n10.222.84.197",
+    "type": "ipsec",
+    "hardware": "IPSEC tünel bağlantısı",
+    "os": "linux",
+    "connections": ["faz2"]
+  },
+  {
+    "id": "faz3",
+    "label": "Faz-3 OAM",
+    "type": "server",
+    "hardware": "Hw info here",
+    "os": "linux",
+    "connections": []
+  },
+  {
+    "id": "faz3_ipsec",
+    "label": "Faz-3 IPSEC\n10.222.84.198",
+    "type": "ipsec",
+    "hardware": "IPSEC tünel bağlantısı",
+    "os": "linux",
+    "connections": ["faz3"]
+  },
+  {
+    "id": "sudan",
+    "label": "Sudan OAM",
+    "type": "server",
+    "hardware": "Hw info here",
+    "os": "linux",
+    "connections": []
+  },
+  {
+    "id": "sudan_ipsec",
+    "label": "Sudan IPSEC\n10.20.30.101",
+    "type": "ipsec",
+    "hardware": "IPSEC tünel bağlantısı",
+    "os": "linux",
+    "connections": ["sudan"]
+  },
+  {
+    "id": "anser_master",
+    "label": "Anser KPI Master\n192.168.38.10",
+    "type": "server",
+    "hardware": "hw info here",
+    "os": "linux",
+    "connections": ["10.16"]
+  },
+  {
+    "id": "anser_slave1",
+    "label": "Anser KPI Slave-1\n192.168.38.11",
+    "type": "server",
+    "hardware": "hw info here",
+    "os": "linux",
+    "connections": ["anser_master"]
+  },
+  {
+    "id": "anser_slave2",
+    "label": "Anser KPI Slave-2\n192.168.38.12",
+    "type": "server",
+    "hardware": "hw info here",
+    "os": "linux",
+    "connections": ["anser_master"]
+  },
+  {
+    "id": "vantage_median",
+    "label": "VantagePM Median & App Server\n192.168.38.1",
+    "type": "application",
+    "hardware": "hw info here",
+    "os": "linux",
+    "connections": []
+  },
+  {
+    "id": "vantage_db",
+    "label": "VantagePM Database Server\n192.168.38.2",
+    "type": "database",
+    "hardware": "hw info here",
+    "os": "linux",
+    "connections": []
+  },
+  {
+    "id": "vantage_app",
+    "label": "VantagePM App Server\n192.168.38.6",
+    "type": "application",
+    "hardware": "hw info here",
+    "os": "linux",
+    "connections": ["vantage_median", "vantage_db", "vantage_mediation", "vantage_archive", "10.16"]
+  },
+  {
+    "id": "vantage_mediation",
+    "label": "VantagePM Mediation Server\n192.168.38.4",
+    "type": "server",
+    "hardware": "hw info here",
+    "os": "linux",
+    "connections": []
+  },
+  {
+    "id": "vantage_archive",
+    "label": "VantagePM Archive Server\n192.168.38.5",
+    "type": "backup",
+    "hardware": "hw info here",
+    "os": "linux",
+    "connections": []
+  },
+  {
+    "id": "bigdata_hub",
+    "label": "BigData Emergency Hub\n734 265 886",
+    "type": "anydesk",
+    "hardware": "",
+    "os": "windows",
+    "connections": []
   }
 ]
