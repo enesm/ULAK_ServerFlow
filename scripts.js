@@ -25,11 +25,9 @@ fetch('servers.json')
             shape: 'image',
             image: typeIcons[server.type],
             font: {
-                face: 'Arial',
                 size: 12,
                 color: '#252525',
-                strokeWidth: 1,
-                strokeColor: '#bbbbbb'
+                background: 'rgba(255,255,255,0.3)'
             }
         })));
 
@@ -38,7 +36,7 @@ fetch('servers.json')
                 from: server.id,
                 to: connection,
                 arrows: 'to',
-                color: { color: '#007bff',highlight:'#f66912' },
+                color: { color: '#007bff', highlight:'#f66912' },
                 width: 2,
                 length: 400
             }))
@@ -75,6 +73,12 @@ fetch('servers.json')
         const container = document.getElementById('network');
         const data = { nodes, edges };
         const network = new vis.Network(container, data, defaultPhysicsOptions);
+
+        // network.once('stabilized', function() {
+        //     network.moveTo({
+        //         scale: 0.5
+        //     });
+        // });
 
         document.getElementById('physicsToggle').addEventListener('change', function() {
             options = this.checked ? defaultPhysicsOptions : noPhysicsOptions;
